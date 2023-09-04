@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('upload', [App\Http\Controllers\UploadController::class, 'upload']);
+Route::post('upload-nopackage', [App\Http\Controllers\UploadNoPackageController::class, 'upload']);
